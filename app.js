@@ -10,9 +10,7 @@ const app = express();
 // require('dotenv').config()
 const port = process.env.PORT || 5000;
 
-//Mongodb connection
-// "mongodb+srv://zigza:zigza4631@cluster0.ypahv.mongodb.net/zigza?retryWrites=true&w=majority",
-//{ autoIndex: false }
+
 mongoose
   .connect("mongodb://localhost:27017/loginsignupapi")
   .then((res) => {
